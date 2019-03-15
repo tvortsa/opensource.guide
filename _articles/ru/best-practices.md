@@ -1,118 +1,118 @@
 ---
-lang: en
-title: Best Practices for Maintainers
-description: Making your life easier as an open source maintainer, from documenting processes to leveraging your community.
+lang: ru
+title: Лучшие практики для сторонников
+description: Облегчение вашей жизни в качестве сторонника открытого исходнго кода, от документирования процессов до использования вашего сообщества.
 class: best-practices
 toc:
-  what-does-it-mean-to-be-a-maintainer: "What does it mean to be a maintainer?"
-  documenting-your-processes: "Documenting your processes"
-  learning-to-say-no: "Learning to say no"
-  leverage-your-community: "Leverage your community"
-  bring-in-the-robots: "Bring in the robots"
-  its-okay-to-hit-pause: "It’s okay to hit pause"
+  what-does-it-mean-to-be-a-maintainer: "Что значит быть сторонником?"
+  documenting-your-processes: "Документирование ваших процессов"
+  learning-to-say-no: "Учимся говорить нет"
+  leverage-your-community: "Используйте ваше сообщество"
+  bring-in-the-robots: "Задействуйте роботов"
+  its-okay-to-hit-pause: "Это нормально - брать паузу"
 order: 5
 image: /assets/images/cards/best-practices.png
 related:
-  - metrics
-  - leadership
+  - метрики
+  - лидерство
 ---
 
-## What does it mean to be a maintainer?
+## Что значит быть сторонником?
 
-If you maintain an open source project that a lot of people use, you may have noticed you're coding less and responding to issues more.
+Если вы являетесь участником проекта с открытым исходным кодом которым пользуется много людей, вы могли заметить, что вы меньше пишете и больше отвечаете на вопросы.
 
-In the early stages of a project, you're experimenting with new ideas and making decisions based on what you want. As your project increases in popularity, you'll find yourself working with your users and contributors more.
+На ранних стадиях проекта, вы экспериментируете с новыми идеями и принимаете решения на основе того, что вы хотите. По мере того, как ваш проект становится все популярнее, вы обнаружите, что работаете со своими пользователями и участниками..
 
-Maintaining a project requires more than code. These tasks are often unexpected, but they're just as important to a growing project. We've gathered a few ways to make your life easier, from documenting processes to leveraging your community.
+Поддержание проекта требует не только кода. Эти задачи часто бывают неожиданными, но они так же важны для растущего проекта. Мы собрали несколько способов сделать вашу жизнь проще, от документирования процессов до использования вашего сообщества.
 
-## Documenting your processes
+## Документирование ваших процессов
 
-Writing things down is one of the most important things you can do as a maintainer.
+Записывать вещи - одна из самых важных вещей, которую вы можете сделать как сопровождающий.
 
-Documentation not only clarifies your own thinking, but it helps other people understand what you need or expect, before they even ask.
+Документация не только проясняет ваше собственное мышление, но это помогает другим людям понять, что вам нужно или ожидать, прежде чем они даже спросят.
 
-Writing things down makes it easier to say no when something doesn't fit into your scope. It also makes it easier for people to pitch in and help. You never know who might be reading or using your project.
+Записывая вещи, легче сказать «нет», когда что-то не вписывается в твою сферу. Это также облегчает людям возможность участвовать и помогать. Вы никогда не знаете, кто может читать или использовать ваш проект.
 
-Even if you don't use full paragraphs, jotting down bullet points is better than not writing at all.
+ДАже если вы не записываете целые параграфы, отметить ключевые моменты все же лучше чем не писать вообще.
 
-Remember to keep your documentation up-to-date. If you're not able to always do this, delete your outdated documentation or indicate it is outdated so contributors know updates are welcome.
+Не забывайте регулярно обновлять документацию. Если вы не всегда можете это сделать, удалите устаревшую документацию или укажите, что она устарела, чтобы участники знали, что обновления приветствуются.
 
-### Write down your project's vision
+### Запишите видение вашего проекта
 
-Start by writing down the goals of your project. Add them to your README, or create a separate file called VISION. If there are other artifacts that could help, like a project roadmap, make those public as well.
+Начните с записи целей вашего проекта. Добавьте их в свой README, или создайте отдельный файл с именем VISION. Если есть другие артефакты, которые могут помочь, например дорожная карта проекта, сделайте их публичными..
 
-Having a clear, documented vision keeps you focused and helps you avoid "scope creep" from others' contributions.
+Наличие четкого, документированного видения держит вас в фокусе и помогает избежать "scope creep" от других участников.
 
-For example, @lord discovered that having a project vision helped him figure out which requests to spend time on. As a new maintainer, he regretted not sticking to his project's scope when he got his first feature request for [Slate](https://github.com/lord/slate).
+Например, @lord обнаружил, что наличие видения проекта помогло ему выяснить, на какие запросы тратить время. Как новый сопровождающий, он сожалел, что не придерживался масштабов своего проекта, когда получил свой первый запрос на добавление [Slate](https://github.com/lord/slate).
 
 <aside markdown="1" class="pquote">
   <img src="https://avatars.githubusercontent.com/lord?s=180" class="pquote-avatar" alt="avatar">
-  I fumbled it. I didn't put in the effort to come up with a complete solution. Instead of an half-assed solution, I wish I had said "I don't have time for this right now, but I'll add it to the long term nice-to-have list."
+  Я завозился. Я не приложил усилий, чтобы найти полное решение. Вместо недоделанного решения, Хотелось бы, чтобы я сказал: «У меня сейчас нет времени на это, но я добавлю его в долгосрочный список желаний»."
   <p markdown="1" class="pquote-credit">
-— @lord, ["Tips for new open source maintainers"](https://lord.io/blog/2014/oss-tips/)
+— @lord, ["Советы для новых разработчиков с открытым исходным кодом"](https://lord.io/blog/2014/oss-tips/)
   </p>
 </aside>
 
-### Communicate your expectations
+### Сообщите свои ожидания
 
-Rules can be nerve-wracking to write down. Sometimes you might feel like you're policing other people's behavior or killing all the fun.
+Написание правил может нервировать. Иногда вы можете чувствовать, что контролируете поведение других людей или убиваете все веселье.
 
-Written and enforced fairly, however, good rules empower maintainers. They prevent you from getting dragged into doing things you don't want to do.
+Но написанные и соблюдаемые честно, хорошие правила помогают сопровождающим. Они мешают вам увлекаться тем, что вы не хотите делать.
 
-Most people who come across your project don't know anything about you or your circumstances. They may assume you get paid to work on it, especially if it's something they regularly use and depend on. Maybe at one point you put a lot of time into your project, but now you're busy with a new job or family member.
+Большинство людей, которые сталкиваются с вашим проектом, ничего не знают о вас или ваших обстоятельствах. Они могут предположить, что вам платят за работу, особенно если это то, что они регулярно используют и от чего зависят. Возможно, в какой-то момент вы потратили много времени на свой проект, но теперь вы заняты новой работой или членом семьи.
 
-All of this is perfectly okay! Just make sure other people know about it.
+Все это совершенно нормально! Просто убедитесь, что другие люди знают об этом.
 
-If maintaining your project is part-time or purely volunteered, be honest about how much time you have. This is not the same as how much time you think the project requires, or how much time others want you to spend.
+Если ведение вашего проекта занято неполный рабочий день или является исключительно добровольным, будьте честны с тем, сколько времени у вас есть. Это не то же самое, что количество времени, которое, по вашему мнению, требуется проекту, или количество времени, которое другие люди хотят, чтобы вы провели.
 
-Here are a few rules that are worth writing down:
+Вот несколько правил, которые стоит записать:
 
-* How a contribution is reviewed and accepted (_Do they need tests? An issue template?_)
-* The types of contributions you'll accept (_Do you only want help with a certain part of your code?_)
-* When it's appropriate to follow up (_for example, "You can expect a response from a maintainer within 7 days. If you haven't heard anything by then, feel free to ping the thread."_)
-* How much time you spend on the project (_for example, "We only spend about 5 hours per week on this project"_)
+* Как участие рассматривается и принимается (_Им нужны тесты? Шаблон вопроса?_)
+* Типы участия, которые вы принимаете (_Вам нужна только помощь с определенной частью вашего кода?_)
+* Когда уместно отслеживание? (_например, «Вы можете ожидать ответа от сопровождающего в течение 7 дней. Если вы ничего не услышали к тому времени, не стесняйтесь пинговать поток."_)
+* Сколько времени вы тратите на проект(_например, «Мы тратим около 5 часов в неделю на этот проект"_)
 
-[Jekyll](https://github.com/jekyll/jekyll/tree/master/docs), [CocoaPods](https://github.com/CocoaPods/CocoaPods/wiki/Communication-&-Design-Rules), and [Homebrew](https://github.com/Homebrew/brew/blob/bbed7246bc5c5b7acb8c1d427d10b43e090dfd39/docs/Maintainers-Avoiding-Burnout.md) are several examples of projects with ground rules for maintainers and contributors.
+[Jekyll](https://github.com/jekyll/jekyll/tree/master/docs), [CocoaPods](https://github.com/CocoaPods/CocoaPods/wiki/Communication-&-Design-Rules), и [Homebrew](https://github.com/Homebrew/brew/blob/bbed7246bc5c5b7acb8c1d427d10b43e090dfd39/docs/Maintainers-Avoiding-Burnout.md) Несколько примеров проектов с основными правилами для сопровождающих и участников.
 
-### Keep communication public
+### Держите общение публичным
 
-Don't forget to document your interactions, too. Wherever you can, keep communication about your project public. If somebody tries to contact you privately to discuss a feature request or support need, politely direct them to a public communication channel, such as a mailing list or issue tracker.
+Не забудьте также документировать ваши взаимодействия. Везде, где можете, держать общение о вашем проекте публичным. Если кто-то попытается связаться с вами в частном порядке, чтобы обсудить запрос функции или необходимость поддержки, вежливо направьте их на общедоступный канал связи, такой как список рассылки или система отслеживания проблем.
 
-If you meet with other maintainers, or make a major decision in private, document these conversations in public, even if it's just posting your notes.
+Если вы встречаетесь с другими сопровождающими, или принимаете важное решение в частном порядке, документировать эти разговоры публично, даже если он просто публикует свои заметки.
 
-That way, anybody who joins your community will have access to the same information as someone who's been there for years.
+Таким образом, любой, кто присоединится к вашему сообществу, будет иметь доступ к той же информации, что и тот, кто был там годами..
 
-## Learning to say no
+## Учимся говорить "нет"
 
-You've written things down. Ideally, everybody would read your documentation, but in reality, you'll have to remind others that this knowledge exists.
+Вы все записали. В идеале, каждый мог бы прочитать вашу документацию, но в действительности вам придется напоминать другим, что эти знания существуют.
 
-Having everything written down, however, helps depersonalize situations when you do need to enforce your rules.
+Однако, все записанное помогает обезличить ситуации, когда вам нужно применять свои правила.
 
-Saying no isn't fun, but  _"Your contribution doesn't match this project's criteria"_ feels less personal than _"I don't like your contribution"_.
+Говорить нет не весело, но  _"Ваш вклад не соответствует критериям этого проекта"_ чувствуется менее личным, чем _"Мне не нравится твой вклад"_.
 
-Saying no applies to many situations you'll come across as a maintainer: feature requests that don't fit the scope, someone derailing a discussion, doing unnecessary work for others.
+Говорить «нет» относится ко многим ситуациям, с которыми вы столкнетесь как сопровождающий: запросы функций, которые не вписываются в рамки, кто-то срывает обсуждение, делает ненужную работу для других.
 
-### Keep the conversation friendly
+### Сохраняйте общение дружелюбным
 
-One of the most important places you'll practice saying no is on your issue and pull request queue. As a project maintainer, you'll inevitably receive suggestions that you don't want to accept.
+Одно из самых важных мест, где вы будете практиковать: «Нет» - это ваша проблема и очередь запросов. Как сопровождающий проекта, вы неизбежно получите предложения, которые вы не хотите принимать.
 
-Maybe the contribution changes your project's scope or doesn't match your vision. Maybe the idea is good, but the implementation is poor.
+Может быть, вклад меняет масштаб вашего проекта или не соответствует вашему видению. Может быть, идея хорошая, но реализация плохая.
 
-Regardless of the reason, it is possible to tactfully handle contributions that don't meet your project's standards.
+Независимо от причины, можно тактично обрабатывать вклады, которые не соответствуют стандартам вашего проекта.
 
-If you receive a contribution you don't want to accept, your first reaction might be to ignore it or pretend you didn't see it. Doing so could hurt the other person's feelings and even demotivate other potential contributors in your community.
+Если вы получаете участие, которое не хотите принимать, вашей первой реакцией может быть игнорирование или вид, что вы его не видели. Это может повредить чувствам другого человека и даже лишить мотивации других потенциальных участников в вашем сообществе.
 
 <aside markdown="1" class="pquote">
   <img src="https://avatars.githubusercontent.com/krausefx?s=180" class="pquote-avatar" alt="avatar">
-  The key to handle support for large-scale open source projects is to keep issues moving. Try to avoid having issues stall. If you're an iOS developer you know how frustrating it can be to submit radars. You might hear back 2 years later, and are told to try again with the latest version of iOS.
+  Ключом к поддержке крупномасштабных проектов с открытым исходным кодом является поддержание проблем движении. Старайтесь избегать срыва проблем (issue). Если вы iOS разработчик вы знаете, как сложно представить радары. Вы могли бы вернуться 2 года спустя, и попробовать еще раз с последней версией iOS.
   <p markdown="1" class="pquote-credit">
-— @KrauseFx, ["Scaling open source communities"](https://krausefx.com/blog/scaling-open-source-communities)
+— @KrauseFx, ["Масштабирование сообществ с открытым исходным кодом"](https://krausefx.com/blog/scaling-open-source-communities)
   </p>
 </aside>
 
-Don't leave an unwanted contribution open because you feel guilty or want to be nice. Over time, your unanswered issues and PRs will make working on your project feel that much more stressful and intimidating.
+Не оставляйте нежелательный вклад открытым, из-за того что вы чувствуете вину или хотите быть милым. Со временем ваши оставшиеся без ответа вопросы и PR сделают работу над вашим проектом намного более напряженной и пугающей..
 
-It's better to immediately close the contributions you know you don't want to accept. If your project already suffers from a large backlog, @steveklabnik has suggestions for [how to triage issues efficiently](https://words.steveklabnik.com/how-to-be-an-open-source-gardener).
+Лучше немедленно закрыть вклады, которые вы не хотите принимать. If your project already suffers from a large backlog, @steveklabnik has suggestions for [how to triage issues efficiently](https://words.steveklabnik.com/how-to-be-an-open-source-gardener).
 
 Secondly, ignoring contributions sends a negative signal to your community. Contributing to a project can be intimidating, especially if it's someone's first time. Even if you don't accept their contribution, acknowledge the person behind it and thank them for their interest. It's a big compliment!
 
